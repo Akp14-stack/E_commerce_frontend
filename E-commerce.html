@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Product Page</title>
+  <link rel="stylesheet" href="E-com.css">
+</head>
+<body>
+  <header>
+    <h1>Shop Products</h1>
+    <div id="filter">
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+    </div>
+  </header>
+  
+  <main>
+    <div class="product-catalog" id="productCatalog">
+      <!-- Product items will be injected here by JavaScript -->
+    </div>
+    
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cartItems"></ul>
+      <p>Total Price: $<span id="totalPrice">0.00</span></p>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+  </main>
+
+  <script src="E-comm.js"></script>
+</body>
+</html>
